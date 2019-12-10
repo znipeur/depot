@@ -7,11 +7,9 @@ pipeline{
 	stages {
 		stage('Build'){
 		steps {
-		bat 'mvn install'
+		bat 'mvn compiler:compile'
 		}
-		post{
-			success {junit 'target/surefire-reports/**/*.xml'
-			}
+		
 		}
 		}
 	}
