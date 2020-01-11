@@ -24,7 +24,7 @@ pipeline{
 		stage('couverture') {
             steps {
                
-                bat 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
+                bat 'mvn cobertura:cobertura '
                 
             }
              post {
