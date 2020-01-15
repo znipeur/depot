@@ -32,7 +32,7 @@ pipeline{
                 stage('Document') {
             steps {
                
-                bat 'mvn package '
+                bat 'mvn site '
                 
             }
              
