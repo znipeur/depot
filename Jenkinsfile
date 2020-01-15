@@ -29,5 +29,21 @@ pipeline{
             }
              
         }
+                stage('Packaging') {
+            steps {
+               
+                bat 'mvn package '
+                
+            }
+             
+        }
+                 stage('Installing') {
+            steps {
+               
+                bat 'mvn install '
+                
+            }
+             
+        }
 	}
 }
