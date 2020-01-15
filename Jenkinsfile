@@ -29,7 +29,7 @@ pipeline{
             }
              
         }
-                stage('Packaging') {
+                stage('Document') {
             steps {
                
                 bat 'mvn package '
